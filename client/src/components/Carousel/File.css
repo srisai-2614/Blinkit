@@ -1,0 +1,42 @@
+.file-drop-zone {
+    border: 2px dashed #ccc;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: border-color 0.3s;
+}
+  
+.file-drop-zone.dragging {
+    border-color: #007bff;
+}
+.image-collection {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 16px;
+}
+  
+.image-container {
+    position: relative;
+}
+  
+.image-preview {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+  
+@media (max-width: 768px) {
+    .image-collection {
+      grid-template-columns: 1fr;
+    }
+}
+.Upload{
+    display: flex;
+    flex-direction: column;
+    background-color: #FFBB64;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+}
